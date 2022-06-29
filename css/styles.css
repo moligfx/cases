@@ -247,17 +247,33 @@ footer{
         justify-content: center;
         flex-wrap: wrap;
     }
+    .card{
+        background-color: #ffffff;
+    }
     .cardimage{
-        width: 134px;
+        width: 114px;
         height: 180px;
     }
     .cardcontent{
-        width: 134px;
+        width: 114px;
         height: 135px;
+        padding: 32px 16px;
     }
     .cardempty{
-        width: 134px;
+        width: 114px;
         height: 135px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .projecttitle{
+        margin-bottom: 8px;
+    }
+
+    .projectsubtitle{
+        font-size: 16px;
     }
     .mobileempty{
         background-color: #ffffff;
