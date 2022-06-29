@@ -1,0 +1,281 @@
+@font-face {
+    font-family: Sofia Pro Light;
+    src: url(../fonts/Sofia\ Pro\ Light.otf);
+}
+@font-face {
+    font-family: Sofia Pro Medium;
+    src: url(../fonts/Sofia\ Pro\ Medium.otf);
+}
+@font-face {
+    font-family: Saol Italic;
+    src: url(../fonts/Saol\ Italic.ttf);
+}
+@font-face {
+    font-family: Monument Regular;
+    src: url(../fonts/Monument\ Regular.otf);
+}
+@font-face {
+    font-family: Monument Bold;
+    src: url(../fonts/Monument\ Bold.otf);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+ /* --------- Aquí empieza el CSS ---------  */
+
+html {
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #F2F2F7;
+    overflow-x: hidden;
+}
+
+header{
+    padding: 32px 80px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #000;
+    position: sticky;
+    top: 0;
+    }
+
+ section{
+     margin: 80px;
+     flex-wrap: wrap;
+ }
+ .projectsection{
+     display: flex;
+     gap: 24px;
+ }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #ff5656;
+}
+
+h2{
+    font-family: Monument Regular;
+    font-size: 36px;
+}
+h3{
+    font-family: Sofia Pro Light;
+    font-size: 24px;
+}
+
+h4{
+    color:#ffffff;
+    font-size: 24px;
+    font-family: Monument Regular;
+    line-height: 32px;
+}
+
+h5{
+    font-family: Sofia Pro Light;
+    font-size: 16px;
+}
+h6{
+    font-family: Sofia Pro Light;
+    font-size: 20px;
+    line-height: 26px;
+}
+p{
+    font-family: Sofia Pro Light;
+    font-size: 16px;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wiam {
+    display: flex;
+    gap: 8px;
+}
+.me{
+    font-family: Monument Regular;
+}
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+.card{
+    border: 1px solid #000;
+}
+
+.cardimage{
+    width: 274px;
+    height: 390px;
+    background-size: cover;
+    padding: 32px 24px;
+    border-bottom: 1px solid #000;
+
+}
+.blis{
+    background-image: url(https://images.unsplash.com/photo-1600962815726-457c46a12681?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNpbmdlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
+}
+.kudi{
+    background-image: url(https://images.unsplash.com/photo-1571867424488-4565932edb41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+}
+.shazam{
+    background-image: url(https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2230&q=80);
+}
+
+.cardempty{
+    width: 274px;
+    height: 390px;
+    background-color: #ffffff;
+    padding: 32px 24px;
+
+}
+
+.cardcontent{
+    width: 274px;
+    height: 200px;
+    padding: 32px 24px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.projecttitle{
+    margin-bottom: 16px;
+    font-family: Monument Regular;
+    line-height: 28px;
+}
+.projectsubtitle{
+    font-size: 20px;
+}
+.cardlink{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.linkrow{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.cardlink:hover{
+    color: #ff5656;
+    
+}
+
+footer{
+    padding: 32px 80px;
+    background-color: black;
+}
+.line{
+    background-color: #ffffff;
+    height: 1px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+}
+.footlogocontainer{
+    width: 100vw;
+    color: #ffffff;
+    display: flex;
+    gap: 8px;
+}
+.footerlogo{
+    font-family: Monument Regular;
+    color: #ffffff;
+}
+.footcontact{
+    margin-bottom: 24px;
+}
+.footdata{
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+.mailphone{
+    margin-bottom: 24px;
+}
+.social{
+    color: #ffffff;
+    display: flex;
+
+}
+.mobilenav{
+    display: none;
+}
+
+
+ /* --------- MOBILE RESPONSIVE ---------  */
+
+@media screen and (max-width: 768px) {
+    body{
+        max-width: 100vw;
+    }
+    header {
+            padding: 20px 16px;
+        }
+    .cabecera{
+        display: flex;
+        justify-content: center;
+    }
+    nav{
+        display: none;
+    }
+    .mobilenav{
+        background-color: #000;
+        padding: 4px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        color: #ffffff;
+    }
+    .tab{
+        color: #ffffff;
+        padding: 8px 8px;
+    }
+
+    section{
+        margin: 32px 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cardimage{
+        width: 164px;
+        height: 180px;
+    }
+    .cardcontent{
+        width: 164px;
+        height: 135px;
+    }
+    .cardempty{
+        width: 164px;
+        height: 135px;
+    }
+    .mobileempty{
+        background-color: #ffffff;
+    }
+    .cardlink{
+        flex-direction: row;
+    }
+}
+
+ /* --------- IPAD RESPONSIVE ---------  */
+
+/*@media screen and (min-width: 415px) and (max-width: 769px) {
+
+    section{
+        margin: 32px 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
