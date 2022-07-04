@@ -42,9 +42,11 @@ header{
     padding: 32px 80px;
     background-color: #ffffff;
     border-bottom: 1px solid #000;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    }
+    box-sizing: border-box;
+}
 
  section{
      margin: 80px;
@@ -53,6 +55,7 @@ header{
  .projectsection{
      display: flex;
      gap: 24px;
+     padding-top: 80px;
  }
 
 a{
@@ -119,7 +122,21 @@ nav {
     background-size: cover;
     padding: 32px 24px;
     border-bottom: 1px solid #000;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
 
+}
+
+.chip{
+    display: none;
+    color: #ffffff;
+    background: rgba(201, 201, 201, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 8px 16px;
+    height: 14px;
+    border-radius: 20px;
 }
 .blis{
     background-image: url(https://images.unsplash.com/photo-1600962815726-457c46a12681?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNpbmdlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
@@ -176,7 +193,7 @@ footer{
     background-color: black;
 }
 .line{
-    background-color: #ffffff;
+    background-color: #444444;
     height: 1px;
     border-radius: 100px;
     margin-bottom: 24px;
@@ -219,7 +236,10 @@ footer{
     }
     header {
             padding: 20px 16px;
-        }
+     }
+    .projectsection{
+            padding-top: 92px;
+    }
     .cabecera{
         display: flex;
         justify-content: center;
@@ -228,6 +248,7 @@ footer{
         display: none;
     }
     .mobilenav{
+        margin-top: 56px;
         background-color: #000;
         padding: 4px 16px;
         display: flex;
@@ -235,6 +256,10 @@ footer{
         align-items: center;
         gap: 16px;
         color: #ffffff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        box-sizing: border-box;
     }
     .tab{
         color: #ffffff;
@@ -253,6 +278,15 @@ footer{
     .cardimage{
         width: 114px;
         height: 180px;
+        padding: 32px 24px;
+        gap: 4px;
+    }
+
+    .chip{
+        display: none;
+        font-size: 12px;
+        height: 10px;
+        padding: 4px 8px;
     }
     .cardcontent{
         width: 114px;
